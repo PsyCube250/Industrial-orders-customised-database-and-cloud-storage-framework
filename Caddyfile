@@ -1,0 +1,3 @@
+217.154.42.76.sslip.io {
+    reverse_proxy backend:8000
+}
