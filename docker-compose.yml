@@ -25,6 +25,11 @@ services:
       db:
         condition: service_healthy
 
+  frontend:
+    build: ./frontend
+    depends_on:
+      - backend
+
   caddy:
     image: caddy:2-alpine
     ports:

@@ -1,0 +1,70 @@
+export const modules = [
+  {
+    id: 1,
+    name: '订单管理',
+    icon: 'Document',
+    route: '/orders',
+    color: '#409EFF',
+    features: ['订单录入', '批量导入订单', '订单查询', '订单跟踪', '订单变更', '订单统计'],
+  },
+  {
+    id: 2,
+    name: '样品管理',
+    icon: 'Picture',
+    route: '/samples',
+    color: '#409EFF',
+    features: ['样品任务分派', '样品制作跟踪', '样品邮寄管理', '客户确认处理', '样品材料清单上传'],
+  },
+  {
+    id: 3,
+    name: '采购物料管理',
+    icon: 'ShoppingCart',
+    route: '/procurement',
+    color: '#409EFF',
+    features: ['采购需求生成', '采购单管理', '供应商管理', '物料入库管理', '缺料预警', '采购报表'],
+  },
+  {
+    id: 4,
+    name: '准备材料管理',
+    icon: 'SetUp',
+    route: '/preparation',
+    color: '#409EFF',
+    features: ['任务分派', '开料报工', '完成度看板'],
+  },
+  {
+    id: 5,
+    name: '生产管理',
+    icon: 'Cpu',
+    route: '/production',
+    color: '#409EFF',
+    features: ['时间日期管理', '生产进度管理', '生产物料管理'],
+  },
+  {
+    id: 6,
+    name: '包装管理',
+    icon: 'Box',
+    route: '/packaging',
+    color: '#409EFF',
+    features: ['包装任务', '包装作业', '包装质检'],
+  },
+  {
+    id: 7,
+    name: '消息与超时提醒',
+    icon: 'Bell',
+    route: '/messages',
+    color: '#409EFF',
+    features: ['超时规则配置', '提醒推送', '升级策略'],
+  },
+]
+
+export const menuItems = [
+  ...modules,
+  {
+    id: 8,
+    name: '系统管理',
+    icon: 'Setting',
+    route: '/system',
+    color: '#409EFF',
+    features: ['用户管理', '角色权限', '操作日志', '通知中心'],
+  },
+]
